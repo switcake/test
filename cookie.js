@@ -1,1 +1,1 @@
-document.cookie = "TEST_COOKIE=123; domain=.switcake.github.io";
+document.cookie = "TEST_COOKIE=123; domain=.switcake.github.io; secure";
