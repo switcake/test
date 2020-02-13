@@ -37,7 +37,8 @@
                     
                 // Set session Id directly (JSP)
                 // See NuDetect v2.2 Integration Guide.pdf for additional options.
-                nds.setSessionId(Math.random());
+                var sid = Math.random();
+                nds.setSessionId(sid);
 
                 // Set the NuDetect placement and placement page
                 nds.setPlacement(urlParams["pl"]);
