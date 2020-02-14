@@ -1,4 +1,4 @@
 (function() {
-   document.cookie = "TEST_COOKIE=123; domain=.staples.com; SameSite=None; secure";
+   document.cookie = "TEST_COOKIE=123; domain=.nudatasecurity.com; SameSite=None; secure";
 
 })();
