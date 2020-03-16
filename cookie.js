@@ -1,4 +1,4 @@
 (function() {
-   document.cookie = "TEST_COOKIE=123; domain=.github.com; SameSite=None; secure";
+   document.cookie = "TEST_COOKIE=123; domain=.github.io; SameSite=None; secure";
 
 })();
