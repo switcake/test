@@ -1,4 +1,4 @@
-<!--
+<h1>Payment Gateway</h1>
 <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
@@ -6,9 +6,10 @@
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit">
 </form>
--->
 
-<h1>Merchant Website</h1>
+
+
+<!--
 <script type="text/javascript">
         var urlParams;
         (window.onpopstate = function () {
@@ -23,6 +24,7 @@
                urlParams[decode(match[1])] = decode(match[2]);
         })();
 </script>
+-->
 
 <!--
 <script src="https://pages.ghe.intra.nudatasecurity.com/christine-kim/test_iframe_cookies/cookie.js"></script>
@@ -32,12 +34,12 @@
 <script src="https://switcake.github.io/test/cookie.js"></script>
 -->
 
-<!--
+
 <script type="text/javascript">
         (function() {
             // Use the appropriate environment Client ID
             var ndClientId = "w-451680"; // test.christine.com
-            var baseUrl = "https://api-us-west-2.nd.nudatasecurity.com/2.2/w/" + ndClientId + "/sync/js/";
+            var baseUrl = "https://ga-us-west-2.nd.nudatasecurity.com/2.2/w/" + ndClientId + "/sync/js/";
             
             (function(w,d,s,u,q,js,fjs,nds){ nds=w.ndsapi||(w.ndsapi={});nds.config={q:[],ready:function(cb){ this.q.push(cb)}};js=d.createElement(s);fjs=d.getElementsByTagName(s)[0]; js.src=u;fjs.parentNode.insertBefore(js,fjs);js.onload=function(){ nds.load(u);}}(window,document, "script",baseUrl));
 
@@ -60,5 +62,3 @@
         } ());
 </script>
 
--->
-<iframe width="600" height="600" src="https://pages.ghe.intra.nudatasecurity.com/christine-kim/3rd_party_cookie_test/index.html"></iframe>
