@@ -36,7 +36,7 @@
 
 
   <script type="text/javascript">
-        (function() {
+        $(document).ready(function() {
             // Use the appropriate environment Client ID
             var ndClientId = "w-451680"; // test.christine.com
             var baseUrl = "https://api-us-west-2.nd.nudatasecurity.com/2.2/w/" + ndClientId + "/sync/js/";
@@ -56,7 +56,7 @@
                 nds.setPlacement("Login");
                 nds.setPlacementPage(1);
             });
-        } ());
+        } );// ());
   </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
