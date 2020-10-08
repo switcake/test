@@ -35,30 +35,31 @@
 -->
 
 
-<script type="text/javascript">
+  <script type="text/javascript">
         (function() {
             // Use the appropriate environment Client ID
             var ndClientId = "w-451680"; // test.christine.com
-            var baseUrl = "https://ga-us-west-2.nd.nudatasecurity.com/2.2/w/" + ndClientId + "/sync/js/";
+            var baseUrl = "https://api-us-west-2.nd.nudatasecurity.com/2.2/w/" + ndClientId + "/sync/js/";
             
             (function(w,d,s,u,q,js,fjs,nds){ nds=w.ndsapi||(w.ndsapi={});nds.config={q:[],ready:function(cb){ this.q.push(cb)}};js=d.createElement(s);fjs=d.getElementsByTagName(s)[0]; js.src=u;fjs.parentNode.insertBefore(js,fjs);js.onload=function(){ nds.load(u);}}(window,document, "script",baseUrl));
 
             // Custom placement configuration
             var nds = window.ndsapi;
-            /*
             nds.config.ready(function() {
                     
                 // Set session Id directly (JSP)
                 // See NuDetect v2.2 Integration Guide.pdf for additional options.
                 var sid = Math.random();
-                nds.setSessionId(sid);
+                nds.setSessionId("TEST_SID_JS_LATENCY");
 
                 // Set the NuDetect placement and placement page
-                nds.setPlacement(urlParams["pl"]);
+                nds.setPlacement("Login");
                 nds.setPlacementPage(1);
             });
-            */
-          
         } ());
-</script>
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Freviews.financesonline.com%2Fp%2Fnudetect%2F&psig=AOvVaw2SIbjXdIWPdhH_-SN_M7gB&ust=1602201948593000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiV08LZo-wCFQAAAAAdAAAAABAD"/>
 
