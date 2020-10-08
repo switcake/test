@@ -41,7 +41,7 @@
             var ndClientId = "w-451680"; // test.christine.com
             var baseUrl = "https://api-us-west-2.nd.nudatasecurity.com/2.2/w/" + ndClientId + "/sync/js/";
             
-            (function(w,d,s,u,q,js,fjs,nds){ nds=w.ndsapi||(w.ndsapi={});nds.config={q:[],ready:function(cb){ this.q.push(cb)}};js=d.createElement(s);js.defer=true;fjs=d.getElementsByTagName(s)[0]; js.src=u;fjs.parentNode.insertBefore(js,fjs);js.onload=function(){ nds.load(u);}}(window,document, "script",baseUrl));
+            (function(w,d,s,u,q,js,fjs,nds){ nds=w.ndsapi||(w.ndsapi={});nds.config={q:[],ready:function(cb){ this.q.push(cb)}};js=d.createElement(s);js.async='async';fjs=d.getElementsByTagName(s)[0]; js.src=u;fjs.parentNode.insertBefore(js,fjs);js.onload=function(){ nds.load(u);}}(window,document, "script",baseUrl));
 
             // Custom placement configuration
             var nds = window.ndsapi;
