@@ -10,32 +10,16 @@
 
 
 <!--
-<script type="text/javascript">
-        var urlParams;
-        (window.onpopstate = function () {
-            var match,
-                pl     = /\+/g,  // Regex for replacing addition symbol with a space
-                search = /([^&=]+)=?([^&]*)/g,
-                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-                query  = window.location.search.substring(1);
-
-            urlParams = {};
-            while (match = search.exec(query))
-               urlParams[decode(match[1])] = decode(match[2]);
-        })();
-</script>
--->
-
-<!--
 <script src="https://pages.ghe.intra.nudatasecurity.com/christine-kim/test_iframe_cookies/cookie.js"></script>
 -->
 
 <!--
 <script src="https://switcake.github.io/test/cookie.js"></script>
 -->
-
-<iframe width=500 height=500 src="https://pages.ghe.intra.nudatasecurity.com/christine-kim/test_iframe_cookies/index.html"></iframe>
 <!--
+<iframe width=500 height=500 src="https://pages.ghe.intra.nudatasecurity.com/christine-kim/test_iframe_cookies/index.html"></iframe>
+-->
+
   <script type="text/javascript">
         (function() {
             // Use the appropriate environment Client ID
@@ -47,19 +31,18 @@
             // Custom placement configuration
             var nds = window.ndsapi;
             nds.config.ready(function() {
-                    
-                // Set session Id directly (JSP)
-                // See NuDetect v2.2 Integration Guide.pdf for additional options.
-                var sid = Math.random();
-                nds.setSessionId(sid);
-
                 // Set the NuDetect placement and placement page
                 nds.setPlacement("Login");
                 nds.setPlacementPage(1);
+                    
+                // Set session Id directly (JSP)
+                // See NuDetect v2.2 Integration Guide.pdf for additional options.
+                var sid = ((new URL(document.location)).searchParams).get("sid");//Math.random();
+                nds.setSessionId(sid);                
             });
         } ());
   </script>
--->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
